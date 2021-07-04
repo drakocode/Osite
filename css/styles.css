@@ -1,79 +1,123 @@
-div.header{
-  color: #ffffff;
-  background-color: #7fff00;
-  width: 100%;
-  color: white;
-  z-index: 10;
-  display: inline;
-  position: fixed;
-  top: 0;
-  padding: 0px 25px 10px 25px;
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-
-}
-.hImg{
-  text-align: center;
-}
-body {
-  font-family: 'Open Sans', sans-serif; /* esse comando
-   insere uma nova fonte no corpo do documento */
-  color: white; /* esse comando
-   insere uma nova cor no texto do documento */
-  background-color: #000000; /* esse comando
-   insere uma nova cor de fundo no corpo do documento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
-  text-align: center; /* esse comando
-   centraliza os texto ao centro */
+/* 
+
+    BODY
+
+*/
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.bodyH1{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 666%;
+    transition: 1.11s ease-in-out;
+    font-family: 'Qahiri', sans-serif;
 }
 
-label {
-  display: block; /* esse comando
-   transforma tags inline em tags block */
+/* 
+
+    FORM
+    
+*/
+.formBx{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    max-width: 400px;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 3%;
+    display: block;
+    animation: slider 2s linear;
+    
+
+}
+.formBxH1{
+    margin-bottom: 11px;
+    text-align: center;
+    font-size: 222%;
+    color: #5800B3;
+    transition: 0.8s ease-in-out;
+}
+.formContent{
+    text-align: center;
+}
+.semConta{
+    margin-bottom: 8%;
+}
+/* inputs */
+input[type='text'],
+input[type='email'],
+input[type='password']{
+    text-align: center;
+    display: inline;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #B3B300 ;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 10px;
+    transition: 0.8s ease-in-out;
+}
+input.confirmSenha[type='password']{
+    margin-left: 13.5%;
+    transition: 0.8s;
 }
 
-input {
-  margin: 15%,11%,15%; /* esse comando
-   insere uma margim para baixo */
+
+/* 
+
+    BOTOES
+
+*/
+.btn{
+    margin: 1%;
+    padding: 12px 30px;
+    border:1px solid;
+    border-radius: 5px;
+    background: none;
+    background-color: #5800B3;
+    color: #FFFE00;
+    transition: all 0.9s ease-in-out;
 }
 
-textarea {
-  margin-bottom: 15px; /* esse comando
-   insere uma margim para baixo */
-}
+/* 
 
-option {
-  display: block; /* esse comando
-   transforma tags inline em tags block */
-}
+    EXTRA FEATURES
 
-select {
-  display: block; /* esse comando
-   transforma tags inline em tags block */
+*/
+.aviso{
+    text-align: center;
+    background-color: red;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 4%;
+    margin: 44% 0px 44%;
+    animation: colorWarning 2s linear infinite;
+}
+.heliceD{
+    display: inline-block;
+    width: 100%;
+}
+.shrek{
+    max-width: 333px;
+    animation: jump 2s linear infinite;
 
-  margin: 0px auto 15px; /* esse comando
-   dá margem em algumas posições diferentes */
-  width: 20%; /* esse comando
-   dá ao elemento uma largura tde 20% */
 }
-.container{
-  padding: 0 33%;
+.rotating{
+    max-width: 666px;
+    margin: 22px auto;
 }
-img.whatsapp{
-  width: 3.5%;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 10;
-}
-
-footer{
-  text-align: center;
-  padding: 28px;
-  background-color: black;
-  position: relative;
-  margin-top: 80px;
+.kids{
+    margin-bottom: 33%;
+    max-width: 333px;
 }
